@@ -81,7 +81,12 @@ namespace exe5
                     Console.WriteLine();
                     switch (ch)
                     {
-
+                        case '1':
+                            q.insert();
+                            break;
+                        case '2':
+                            q.delete();
+                            break;
                     }
                 }
             }
