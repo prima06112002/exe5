@@ -97,6 +97,10 @@ namespace exe5
                             break;
                     }
                 }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values entered.");
+                }
             }
         }
     }
