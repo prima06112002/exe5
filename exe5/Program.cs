@@ -8,7 +8,7 @@ namespace exe5
 {
     class Node
     {
-        public string name;
+        public string val;
         public Node next;
     }
     class queue
@@ -20,13 +20,13 @@ namespace exe5
             ramadhan = null;
         }
 
-        public void insert()
+        public void enter()
         {
-            string nm;
+            string data;
             Node newnode = new Node();
             Console.WriteLine("Masukan Element: ");
-            nm = Console.ReadLine();
-            newnode.name = nm;
+            data = Console.ReadLine();
+            newnode.val = data;
             newnode.next = null;
             if (prima == null)
             {
@@ -56,9 +56,9 @@ namespace exe5
                 return;
             }
             Node display;
-            int nd = 1;
+            int Count = 1;
             for (display = prima; display != null; display = display.next)
-                Console.WriteLine(display.name);
+                Console.WriteLine("Data number [" +  (Count++)+  "] is :" +display.val);
         }
     }
     class Program
@@ -72,7 +72,7 @@ namespace exe5
                 try
                 {
                     Console.WriteLine("Menu");
-                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("1. Implement enter operation");
                     Console.WriteLine("2. Implement delete operation");
                     Console.WriteLine("3. Display values");
                     Console.WriteLine("4. Exit");
@@ -82,7 +82,7 @@ namespace exe5
                     switch (ch)
                     {
                         case '1':
-                            q.insert();
+                            q.enter();
                             break;
                         case '2':
                             q.delete();
