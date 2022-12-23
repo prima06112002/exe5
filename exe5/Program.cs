@@ -13,6 +13,16 @@ namespace exe5
     }
     class queue
     {
+        Node prima, ramadhan;
+        public queue()
+        {
+            prima = null;
+            ramadhan = null;
+        }
 
+        public void insert()
+        {
+
+        }
     }
 }
