@@ -37,5 +37,30 @@ namespace exe5
             ramadhan.next = newnode;
             ramadhan = newnode;
         }
+        public void delete()
+        {
+            if (prima == null)
+            {
+                Console.WriteLine("Queue is Empty!!");
+                return;
+            }
+            prima = prima.next;
+            if (prima == null)
+                ramadhan = null;
+        }
+        public void display()
+        {
+            if (prima == null)
+            {
+                Console.WriteLine("Queue is Empty!!");
+                return;
+            }
+            Node display;
+            int nd = 1;
+            for (display = prima; display != null; display = display.next)
+                Console.WriteLine(display.name);
+        }
     }
+
+
 }
