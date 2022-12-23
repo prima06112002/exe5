@@ -22,7 +22,20 @@ namespace exe5
 
         public void insert()
         {
-
+            string nm;
+            Node newnode = new Node();
+            Console.WriteLine("Masukan Element: ");
+            nm = Console.ReadLine();
+            newnode.name = nm;
+            newnode.next = null;
+            if (prima == null)
+            {
+                prima = newnode;
+                ramadhan = newnode;
+                return;
+            }
+            ramadhan.next = newnode;
+            ramadhan = newnode;
         }
     }
 }
