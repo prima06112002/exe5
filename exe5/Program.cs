@@ -92,6 +92,9 @@ namespace exe5
                             break;
                         case '4':
                             return;
+                        default:
+                            Console.WriteLine("Invalid Option");
+                            break;
                     }
                 }
             }
