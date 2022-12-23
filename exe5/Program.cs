@@ -61,6 +61,16 @@ namespace exe5
                 Console.WriteLine(display.name);
         }
     }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            queue q = new queue();
+            char ch;
+            while (true)
+            {
 
-
+            }
+        }
+    }
 }
